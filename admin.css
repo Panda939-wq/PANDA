@@ -486,7 +486,7 @@ body{
 }
 
 /* Адаптивность для маленьких экранов */
-@media (min-width: 768px) and (max-width: 1399px) {
+@media (min-width: 1000px) and (max-width: 1399px) {
     .requests-list {
         grid-template-columns: repeat(2, 1fr); /* 2 колонки на планшетах */
     }
@@ -502,7 +502,7 @@ body{
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 999px) {
     .requests-list {
         grid-template-columns: 1fr; /* 1 колонка на телефонах */
         justify-items: center;
