@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+
+  body {
+    background: #f5f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 16px;
+  }
+
+  /* Карточка страницы — 390px ширина, имитация смартфона */
+  .phone-frame {
+    max-width: 450px;
+    width: 100%;
+    background: #ffffff;
+    
+    box-shadow: 0 20px 40px rgba(0, 10, 30, 0.12), 0 8px 24px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    padding: 40px;
+    transition: all 0.2s;
+    margin: 0 auto;
+  }
+
+  /* Шапка с хлебными крошками и заголовком */
+  .page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .back-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #1a2b4a;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    background: #f0f3fa;
+    padding: 8px 14px 8px 10px;
+    border-radius: 30px;
+    transition: background 0.2s, transform 0.1s;
+  }
+
+  .back-link i {
+    font-size: 14px;
+    color: #2a4b7c;
+  }
+
+  .back-link:active {
+    background: #e0e6f5;
+    transform: scale(0.96);
+  }
+
+  .user-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #ecf3ff;
+    padding: 6px 14px 6px 10px;
+    border-radius: 40px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #1a2b4a;
+  }
+
+  .user-badge i {
+    font-size: 16px;
+    color: #2a7de1;
+  }
+
+  .page-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #0b1b33;
+    letter-spacing: -0.3px;
+    margin: 6px 0 6px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .page-title i {
+    color: #2a7de1;
+    font-size: 24px;
+  }
+
+  .subhead {
+    color: #5e6f8d;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: -2px;
+    margin-bottom: 20px;
+    border-left: 3px solid #2a6bb0;
+    padding-left: 12px;
+    background: #f8faff;
+    border-radius: 0 8px 8px 0;
+    line-height: 1.4;
+  }
+
+  /* Стили формы */
+  .form-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 6px 0 4px 0;
+  }
+
+  .form-group {
+    margin-bottom: 22px;
+    position: relative;
+  }
+
+  .form-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #1f2e4a;
+    margin-bottom: 8px;
+  }
+
+  .form-group label i {
+    color: #2a7de1;
+    width: 18px;
+    font-size: 16px;
+  }
+
+  .form-group .required-star {
+    color: #c73a3a;
+    margin-left: 2px;
+  }
+
+  /* Поля ввода, select, дата */
+  .form-control {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 15px;
+    border: 1.5px solid #dce2ef;
+    border-radius: 18px;
+    background: #fafbff;
+    transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+    outline: none;
+    color: #121f36;
+    font-weight: 450;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  .form-control:focus {
+    border-color: #2a7de1;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(31, 95, 172, 0.12);
+  }
+
+  .form-control::placeholder {
+    color: #8a9bb8;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  /* Кастомный select (стрелка) */
+  .select-wrapper {
+    position: relative;
+  }
+
+  .select-wrapper::after {
+    content: "\f078";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #3d5a7a;
+    font-size: 13px;
+    pointer-events: none;
+  }
+
+  .select-wrapper select {
+    padding-right: 44px;
+    cursor: pointer;
+    background: #fafbff;
+  }
+
+  /* радио-группа оплаты */
+  .payment-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 4px;
+  }
+
+  .payment-option {
+    flex: 1 0 auto;
+    background: #f5f8ff;
+    border: 1.5px solid #dce2ef;
+    border-radius: 40px;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.15s;
+    cursor: pointer;
+    font-weight: 500;
+    color: #1f2e4a;
+    font-size: 14px;
+  }
+
+  .payment-option i {
+    font-size: 18px;
+    color: #456e9e;
+    width: 24px;
+    text-align: center;
+  }
+
+  .payment-option input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #b2c4df;
+    border-radius: 50%;
+    outline: none;
+    transition: 0.12s;
+    margin-right: 2px;
+    flex-shrink: 0;
+    position: relative;
+  }
+
+  .payment-option input[type="radio"]:checked {
+    border-color: #2a7de1;
+    background: #2a7de1;
+    box-shadow: inset 0 0 0 4px white, 0 0 0 1px #1f5fac;
+  }
+
+  .payment-option:has(input:checked) {
+    border-color: #2a7de1;
+    background: #e9f0fe;
+    box-shadow: 0 2px 8px rgba(31, 95, 172, 0.10);
+  }
+
+  .payment-option:active {
+    transform: scale(0.97);
+  }
+
+  /* Кнопка отправки */
+  .btn-submit {
+    width: 100%;
+    padding: 16px;
+    background: #2a7de1;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.08s, box-shadow 0.2s;
+    box-shadow: 0 6px 14px rgba(31, 95, 172, 0.25);
+    letter-spacing: 0.3px;
+  }
+
+  .btn-submit i {
+    font-size: 18px;
+    transition: transform 0.2s;
+  }
+
+  .btn-submit:active {
+    background: #12427a;
+    transform: scale(0.97);
+    box-shadow: 0 3px 8px rgba(31, 95, 172, 0.25);
+  }
+
+  .btn-submit:hover{
+      background: #ffd166;
+  }
+
+  .btn-submit:active i {
+    transform: translateX(4px);
+  }
+
+  /* разделитель */
+  .divider {
+    height: 1px;
+    background: linear-gradient(to right, #dce2ef, transparent);
+    margin: 26px 0 6px 0;
+  }
+
+  /* Микро-анимация для полей при фокусе (уже добавлена) */
+  .form-control {
+    transition: border 0.2s, box-shadow 0.2s, background 0.2s;
+  }
+
+  /* Адаптивность для очень маленьких экранов ( < 390) */
+  @media (max-width: 400px) {
+    .phone-frame {
+      padding: 18px 14px 24px;
+      border-radius: 28px;
+    }
+    .page-title {
+      font-size: 22px;
+    }
+    .payment-option {
+      padding: 10px 14px;
+      font-size: 13px;
+    }
+    .btn-submit {
+      font-size: 16px;
+      padding: 14px;
+    }
+  }
+
+  /* Анимация появления (небольшой акцент) */
+  .phone-frame {
+    animation: fadeSlideUp 0.35s ease-out;
+  }
+
+  @keyframes fadeSlideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* иконка календаря для даты (нативный календарь) */
+  input[type="date"] {
+    color-scheme: light;
+    padding-right: 12px;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0.5;
+    padding: 4px;
+    filter: invert(0.2);
+  }
+
+  /* Сообщение под полем (для примера, микро) */
+  .hint-text {
+    font-size: 12px;
+    color: #6f83a3;
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    opacity: 0.8;
+  }
+
+  .hint-text i {
+    font-size: 12px;
+  }
+
+  /* Стили для ссылки "Еще не зарегистрированы?" внизу (по желанию) */
+  .auth-switch {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 14px;
+    color: #3f5a7c;
+  }
+
+  .auth-switch a {
+    color: #2a7de1;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px dashed #b6cae5;
+    padding-bottom: 1px;
+    transition: border 0.2s;
+  }
+
+  .auth-switch a:active {
+    border-bottom: 1px solid #2a7de1;
+  }
+
+  /* иконка "заявка" в заголовке */
+  .badge-icon {
+    background: #dfe9fd;
+    border-radius: 30px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #1f4e8c;
+    margin-left: 6px;
+  }

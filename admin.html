@@ -1,0 +1,426 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="admin.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section class="sec">
+            <article class="art">
+                <article style="text-align: center;">
+                <div class="shapka12">
+                    <p class="zag" style="margin-top: 60px; margin-bottom: 60px;">Корочки.есит</p>
+
+                    
+                </div>
+                </article>
+
+
+                
+            
+            <header class="header" style="background: #2a7de1;">
+                
+            
+                
+                <input type="checkbox" id="menu-check">
+            
+                
+                <label for="menu-check" class="burger" style="color: white;">☰</label>
+            
+                
+                <ul class="menu">
+                    
+                    <li><div class="shapka1" style="border-radius: 10px; ">
+                        <p style="margin: 10px;"><a href="zaiavki.html" style="text-decoration: none; color: rgb(0, 0, 0);">Выход</a></p>
+                    </div></li>
+                    
+                </ul>
+            </header>
+
+                
+                <article class="menu2" style="margin-bottom: 20px;">
+                
+                <div class="shapka1" >
+                    <p style="margin: 10px;"><a href="zaiavki.html" style="text-decoration: none; color: rgb(255, 255, 255);">Выход</a></p>
+                </div>
+                
+                
+                </article>
+                
+    
+                
+                
+    
+            </article>
+        </section>
+
+    
+
+        <section class="sec2" style="
+
+
+            box-shadow: 10px rgb(197, 190, 212);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        ">
+            <article class="art34" >
+                <div class="shapka13" style="margin-top: 20px; margin-bottom: 10px;"><p style=" display: inline-block;
+    
+ 
+                    font-size: 45px;
+                    justify-content: space-between;
+                    
+                    font-family: Playfair Display;
+                    color: rgb(36, 35, 35); margin-bottom: 45px; margin-top: 45px;">Панель администратора</p></div>
+                <hr style="margin-left: 30px; margin-right: 30px;">
+                
+
+            </article>
+        </section>
+
+        
+            <div class="phone-frame" style="margin-top: 50px;">
+        
+                <!-- ========== ШАПКА ========== -->
+                <div class="page-header">
+                    
+                    <div class="admin-badge">
+                        <i class="fas fa-user-shield"></i>
+                        <span>Админ</span>
+                    </div>
+                </div>
+        
+                <!-- ========== ЗАГОЛОВОК ========== -->
+                <div class="page-title">
+                    <i class="fas fa-clipboard-list"></i> Заявки
+                    <span class="title-badge">5</span>
+                </div>
+                
+        
+        
+                <div class="stats-row">
+                    <div class="stat-card new">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label"><i class="fas fa-circle" style="color:#2a6bb0; font-size:8px;"></i> Новые</span>
+                    </div>
+                    <div class="stat-card progress">
+                        <span class="stat-number">1</span>
+                        <span class="stat-label"><i class="fas fa-circle" style="color:#e68a2e; font-size:8px;"></i> В работе</span>
+                    </div>
+                    <div class="stat-card done">
+                        <span class="stat-number">1</span>
+                        <span class="stat-label"><i class="fas fa-circle" style="color:#1e9b6e; font-size:8px;"></i> Завершены</span>
+                    </div>
+                </div>
+        
+         
+                <div class="section-title">
+                    <h3 style="font-size: 20px;">Все заявки</h3>
+                    <button class="filter-btn"><i class="fas fa-sliders-h"></i> Фильтр</button>
+                </div>
+        
+                <div class="requests-list">
+        
+             
+                    <div class="request-card" data-status="new">
+                        <div class="request-header">
+                            <div class="request-user">
+                                <div class="avatar">АК</div>
+                                <div>
+                                    <div class="name">Анна Кузнецова</div>
+                                    <div class="email">anna@mail.ru</div>
+                                </div>
+                            </div>
+                            <span class="status-badge new"><i class="fas fa-clock"></i> Новая</span>
+                        </div>
+                        <div class="request-details">
+                            <span><i class="fas fa-book-open"></i> Веб-разработка (Fullstack)</span>
+                            <span><i class="fas fa-calendar-alt"></i> 01.07.2026</span>
+                            <span><i class="fas fa-credit-card"></i> Наличные</span>
+                        </div>
+                        <div class="request-actions">
+                            <button class="btn-status approve" data-action="progress"><i class="fas fa-play"></i> В работу</button>
+                            <button class="btn-status complete" data-action="complete"><i class="fas fa-check"></i> Завершить</button>
+                        </div>
+                    </div>
+        
+                
+                    <div class="request-card" data-status="new">
+                        <div class="request-header">
+                            <div class="request-user">
+                                <div class="avatar">ИП</div>
+                                <div>
+                                    <div class="name">Иван Петров</div>
+                                    <div class="email">ivan.p@yandex.ru</div>
+                                </div>
+                            </div>
+                            <span class="status-badge new"><i class="fas fa-clock"></i> Новая</span>
+                        </div>
+                        <div class="request-details">
+                            <span><i class="fas fa-book-open"></i> Data Science с Python</span>
+                            <span><i class="fas fa-calendar-alt"></i> 15.07.2026</span>
+                            <span><i class="fas fa-mobile-screen-button"></i> Перевод по номеру</span>
+                        </div>
+                        <div class="request-actions">
+                            <button class="btn-status approve" data-action="progress"><i class="fas fa-play"></i> В работу</button>
+                            <button class="btn-status complete" data-action="complete"><i class="fas fa-check"></i> Завершить</button>
+                        </div>
+                    </div>
+        
+              
+                    <div class="request-card" data-status="new">
+                        <div class="request-header">
+                            <div class="request-user">
+                                <div class="avatar">ЕС</div>
+                                <div>
+                                    <div class="name">Елена Смирнова</div>
+                                    <div class="email">elena.s@mail.com</div>
+                                </div>
+                            </div>
+                            <span class="status-badge new"><i class="fas fa-clock"></i> Новая</span>
+                        </div>
+                        <div class="request-details">
+                            <span><i class="fas fa-book-open"></i> UX/UI дизайн (продвинутый)</span>
+                            <span><i class="fas fa-calendar-alt"></i> 20.07.2026</span>
+                            <span><i class="fas fa-credit-card"></i> Наличные</span>
+                        </div>
+                        <div class="request-actions">
+                            <button class="btn-status approve" data-action="progress"><i class="fas fa-play"></i> В работу</button>
+                            <button class="btn-status complete" data-action="complete"><i class="fas fa-check"></i> Завершить</button>
+                        </div>
+                    </div>
+        
+              
+                    <div class="request-card" data-status="progress">
+                        <div class="request-header">
+                            <div class="request-user">
+                                <div class="avatar">МК</div>
+                                <div>
+                                    <div class="name">Михаил Крылов</div>
+                                    <div class="email">m.krylov@bk.ru</div>
+                                </div>
+                            </div>
+                            <span class="status-badge in-progress"><i class="fas fa-spinner"></i> Идёт обучение</span>
+                        </div>
+                        <div class="request-details">
+                            <span><i class="fas fa-book-open"></i> Управление проектами (PM)</span>
+                            <span><i class="fas fa-calendar-alt"></i> 10.06.2026</span>
+                            <span><i class="fas fa-mobile-screen-button"></i> Перевод по номеру</span>
+                        </div>
+                        <div class="request-actions">
+                            <button class="btn-status complete" data-action="complete"><i class="fas fa-check"></i> Завершить</button>
+                        </div>
+                    </div>
+        
+                  
+                    <div class="request-card" data-status="done">
+                        <div class="request-header">
+                            <div class="request-user">
+                                <div class="avatar">ОВ</div>
+                                <div>
+                                    <div class="name">Ольга Васильева</div>
+                                    <div class="email">olga.v@yandex.ru</div>
+                                </div>
+                            </div>
+                            <span class="status-badge done"><i class="fas fa-check-circle"></i> Обучение завершено</span>
+                        </div>
+                        <div class="request-details">
+                            <span><i class="fas fa-book-open"></i> Бизнес-аналитика</span>
+                            <span><i class="fas fa-calendar-alt"></i> 01.05.2026</span>
+                            <span><i class="fas fa-credit-card"></i> Наличные</span>
+                        </div>
+                        <div class="request-actions">
+                            <button class="btn-status" disabled><i class="fas fa-check"></i> Завершено</button>
+                        </div>
+                    </div>
+        
+                </div>
+        
+           
+                <div class="slider-section">
+                   
+                    <div class="slider-wrapper" id="sliderWrapper">
+                        <div class="slider-track" id="sliderTrack" style="transform: translateX(0%);">
+                            <!-- Слайд 1 -->
+                            <div class="slider-slide" style="background: linear-gradient(145deg, #dce6f5, #c2d2ea);">
+                                <i class="fas fa-laptop-code" style="font-size:48px; opacity:0.6;"></i>
+                                <span style="position:absolute; bottom:20px; background:rgba(0,0,0,0.3); color:white; padding:4px 16px; border-radius:20px; font-size:14px;">Веб-разработка</span>
+                            </div>
+                            <!-- Слайд 2 -->
+                            <div class="slider-slide" style="background: linear-gradient(145deg, #d4f0e5, #b8e0d0);">
+                                <i class="fas fa-chart-line" style="font-size:48px; opacity:0.6;"></i>
+                                <span style="position:absolute; bottom:20px; background:rgba(0,0,0,0.3); color:white; padding:4px 16px; border-radius:20px; font-size:14px;">Data Science</span>
+                            </div>
+                            <!-- Слайд 3 -->
+                            <div class="slider-slide" style="background: linear-gradient(145deg, #fee9d1, #fad6b0);">
+                                <i class="fas fa-paint-brush" style="font-size:48px; opacity:0.6;"></i>
+                                <span style="position:absolute; bottom:20px; background:rgba(0,0,0,0.3); color:white; padding:4px 16px; border-radius:20px; font-size:14px;">UX/UI дизайн</span>
+                            </div>
+                            <!-- Слайд 4 -->
+                            <div class="slider-slide" style="background: linear-gradient(145deg, #f5e6ff, #e8d5f5);">
+                                <i class="fas fa-users" style="font-size:48px; opacity:0.6;"></i>
+                                <span style="position:absolute; bottom:20px; background:rgba(0,0,0,0.3); color:white; padding:4px 16px; border-radius:20px; font-size:14px;">Управление проектами</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-controls">
+                        <button class="slider-btn" id="prevSlide" aria-label="Назад"><i class="fas fa-chevron-left"></i></button>
+                        <div class="slider-dots" id="sliderDots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                            <span class="dot" data-index="2"></span>
+                            <span class="dot" data-index="3"></span>
+                        </div>
+                        <button class="slider-btn" id="nextSlide" aria-label="Вперёд"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+        
+                <!-- ========== ПЕРЕКЛЮЧЕНИЕ НА РЕГИСТРАЦИЮ ========== -->
+                <div style="margin-top: 18px; text-align: center; font-size: 13px; color: #6f83a3; border-top: 1px solid #edf2fa; padding-top: 16px;">
+                    <i class="far fa-user" style="margin-right: 6px;"></i>
+                    <a href="zaiavki.html" style="color:#1f5fac; font-weight:600;">Выйти из админ-панели</a>
+                </div>
+        
+            </div>
+        
+            <!-- ========================================
+            СКРИПТ ДЛЯ СЛАЙДЕРА И ИЗМЕНЕНИЯ СТАТУСА
+            ======================================== -->
+            <script>
+                (function() {
+                    'use strict';
+        
+                    // ========== СЛАЙДЕР ==========
+                    const track = document.getElementById('sliderTrack');
+                    const dots = document.querySelectorAll('.dot');
+                    const prevBtn = document.getElementById('prevSlide');
+                    const nextBtn = document.getElementById('nextSlide');
+                    let currentSlide = 0;
+                    const totalSlides = 4;
+        
+                    function updateSlider(index) {
+                        if (index < 0) index = totalSlides - 1;
+                        if (index >= totalSlides) index = 0;
+                        currentSlide = index;
+                        track.style.transform = 'translateX(-' + (index * 100) + '%)';
+                        dots.forEach((dot, i) => {
+                            dot.classList.toggle('active', i === index);
+                        });
+                    }
+        
+                    prevBtn.addEventListener('click', function() {
+                        updateSlider(currentSlide - 1);
+                    });
+        
+                    nextBtn.addEventListener('click', function() {
+                        updateSlider(currentSlide + 1);
+                    });
+        
+                    dots.forEach((dot, index) => {
+                        dot.addEventListener('click', function() {
+                            updateSlider(index);
+                        });
+                    });
+        
+                    // ========== ИЗМЕНЕНИЕ СТАТУСА ЗАЯВКИ ==========
+                    document.querySelectorAll('.btn-status[data-action]').forEach(btn => {
+                        btn.addEventListener('click', function(e) {
+                            e.stopPropagation();
+                            const card = this.closest('.request-card');
+                            if (!card) return;
+                            const statusBadge = card.querySelector('.status-badge');
+                            const action = this.getAttribute('data-action');
+        
+                            // Удаляем все старые статусы
+                            statusBadge.classList.remove('new', 'in-progress', 'done');
+        
+                            if (action === 'progress') {
+                                // "В работу" → статус "Идёт обучение"
+                                statusBadge.textContent = ' Идёт обучение';
+                                statusBadge.classList.add('in-progress');
+                                // Меняем иконку
+                                statusBadge.innerHTML = '<i class="fas fa-spinner"></i> Идёт обучение';
+                                // Обновляем кнопки: убираем "В работу", оставляем "Завершить"
+                                const actionsDiv = card.querySelector('.request-actions');
+                                actionsDiv.innerHTML = `
+                                    <button class="btn-status complete" data-action="complete"><i class="fas fa-check"></i> Завершить</button>
+                                `;
+                                // Перепривязываем событие
+                                actionsDiv.querySelector('.btn-status').addEventListener('click', arguments.callee);
+                                // Обновляем статистику (просто для демо)
+                                updateStats();
+                            } else if (action === 'complete') {
+                                // "Завершить" → статус "Обучение завершено"
+                                statusBadge.textContent = ' Обучение завершено';
+                                statusBadge.classList.add('done');
+                                statusBadge.innerHTML = '<i class="fas fa-check-circle"></i> Обучение завершено';
+                                const actionsDiv = card.querySelector('.request-actions');
+                                actionsDiv.innerHTML = `
+                                    <button class="btn-status" disabled><i class="fas fa-check"></i> Завершено</button>
+                                `;
+                                updateStats();
+                            }
+                        });
+                    });
+        
+                    // ========== ОБНОВЛЕНИЕ СТАТИСТИКИ (демо) ==========
+                    function updateStats() {
+                        const cards = document.querySelectorAll('.request-card');
+                        let newCount = 0,
+                            progressCount = 0,
+                            doneCount = 0;
+        
+                        cards.forEach(card => {
+                            const badge = card.querySelector('.status-badge');
+                            if (badge.classList.contains('new')) newCount++;
+                            else if (badge.classList.contains('in-progress')) progressCount++;
+                            else if (badge.classList.contains('done')) doneCount++;
+                        });
+        
+                        const stats = document.querySelectorAll('.stat-number');
+                        stats[0].textContent = newCount;
+                        stats[1].textContent = progressCount;
+                        stats[2].textContent = doneCount;
+                    }
+        
+                    // начальный подсчёт
+                    updateStats();
+        
+                })();
+            </script>
+        
+
+       
+    </header>
+
+    <main >
+        
+    </main>
+
+    <footer >
+       <section class="sec">
+            <article class="art1_2">
+                <article style="text-align: center;">
+                <div class="shapka12">
+                    <p class="zag2" style="margin-top: 40px; margin-bottom: 40px;">Корочки.есит</p>
+
+                    
+                </div>
+                </article>
+                <article>
+                
+                </article>
+                
+    
+                
+                
+    
+            </article>
+        </section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="sozdstzaiavki.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="phone-frame">
+      <!-- Шапка: назад + юзер -->
+      <div class="page-header">
+        <a href="zaiavki.html" class="back-link" aria-label="Назад">
+          <i class="fas fa-arrow-left"></i> Назад
+        </a>
+        <div class="user-badge">
+          <i class="fas fa-user-circle"></i> 
+          <span>Анна К.</span>
+        </div>
+      </div>
+  
+      <!-- Заголовок страницы -->
+      <div class="page-title">
+         <p>Новая заявка</p>
+        
+      </div>
+      
+      <!-- Форма -->
+      <form class="form-card" >
+        
+        <!-- Курс (выпадающий список) -->
+        <div class="form-group">
+          <label for="courseSelect">
+            <i class="fas fa-book-open"></i> Наименование курса <span class="required-star">*</span>
+          </label>
+          <div class="select-wrapper">
+            <select id="courseSelect" class="form-control" required>
+              <option value="" disabled selected>— Выберите курс —</option>
+              <option value="web-dev">Веб-разработка (Fullstack)</option>
+              <option value="data-science">Data Science с Python</option>
+              <option value="design">UX/UI дизайн (продвинутый)</option>
+              <option value="marketing">Цифровой маркетинг</option>
+              <option value="management">Управление проектами (PM)</option>
+              <option value="analytics">Бизнес-аналитика</option>
+            </select>
+          </div>
+          <div class="hint-text"><i class="fas fa-chevron-down"></i> Выберите из списка</div>
+        </div>
+  
+        <!-- Дата начала -->
+        <div class="form-group">
+          <label for="startDate">
+            <i class="fas fa-calendar-day"></i> Желаемая дата начала <span class="required-star">*</span>
+          </label>
+          <input type="date" id="startDate" class="form-control" required value="2026-07-01" min="2026-06-22" />
+          <div class="hint-text"><i class="far fa-calendar-alt"></i> Выберите дату (от 22 июня 2026)</div>
+        </div>
+  
+        <!-- Способ оплаты (радио) -->
+        <div class="form-group">
+          <label>
+            <i class="fas fa-credit-card"></i> Способ оплаты <span class="required-star">*</span>
+          </label>
+          <div class="payment-group">
+            <label class="payment-option">
+              <input type="radio" name="payment" value="cash" checked />
+              <i class="fas fa-money-bill-wave"></i> Наличные
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment" value="transfer" />
+              <i class="fas fa-mobile-screen-button"></i> Перевод по номеру
+            </label>
+          </div>
+         
+        </div>
+  
+        <!-- Кнопка отправить -->
+        <button type="submit" class="btn-submit">
+          <i class="fas fa-paper-plane"></i> Отправить заявку
+        </button>
+  
+        <!-- разделитель и переключение на регистрацию (по желанию) -->
+        <div class="divider"></div>
+        <div class="auth-switch">
+          <i class="far fa-user" style="margin-right: 6px;"></i> 
+          <a href="pr18.html">Еще не зарегистрированы? Регистрация</a>
+        </div>
+  
+      </form>
+  
+      
+      
+    </div>
+  </body>
+</html>
